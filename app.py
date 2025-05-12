@@ -15,6 +15,14 @@ feature_names = model.feature_names_in_
 st.title("🔬 Breast Cancer Predictor")
 st.markdown("Enter the following medical measurements to predict whether the tumor is **Benign** or **Malignant**.")
 
+st.sidebar.title("About")
+st.sidebar.markdown("""
+This app uses a **Random Forest Classifier** to predict whether a tumor is **Benign** or **Malignant** based on medical features.
+
+Model trained on the Breast Cancer Wisconsin dataset.
+""")
+
+
 # Input layout
 cols = st.columns(2)
 user_input = []
